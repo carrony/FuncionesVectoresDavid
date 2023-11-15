@@ -41,15 +41,15 @@ int main(void) {
 					fallo=1;
 				}
 			}
-			if (fallo==0) {
-				printf("Patrón encontrado");
-				break;
-			} else {
-				printf("No se ha encontrado");
-			}
+			if (fallo==0) break;
 		}
 	}
 
+	if (fallo==0) {
+		printf("Patrón encontrado");
+	} else {
+		printf("No se ha encontrado");
+	}
 
 
 
