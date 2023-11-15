@@ -17,11 +17,41 @@ void pedirVector(int tam, int vector[]) {
 	}
 }
 
+void pedirVectorReales(int tam, float vector[]) {
+	int i;
+
+	for(i=0;i<tam;i++) {
+		printf("Introduce el elemento %d: ",i+1);
+		fflush(stdout);
+		scanf("%f", &vector[i]);
+	}
+}
+
 void mostrarVector(int tam, int vector[]) {
 	int i;
 
 	for(i=0;i<tam;i++) {
 		printf("%d ", vector[i]);
+	}
+}
+
+void mostrarVectorReales(int tam, float vector[]) {
+	int i;
+
+	for(i=0;i<tam;i++) {
+		printf("%.2f ", vector[i]);
+	}
+}
+
+void mostrarVectorRealesIntervalo(int tam, float vector[],
+		                         float minimo, float maximo) {
+	int i;
+
+	for(i=0;i<tam;i++) {
+		if(vector[i] >= minimo && vector[i]<maximo) {
+			printf("%.2f ", vector[i]);
+
+		}
 	}
 }
 

@@ -14,6 +14,12 @@
 	 */
 	void pedirVector(int tam, int vector[]);
 
+	void pedirVectorReales(int tam, float vector[]);
+
+	void mostrarVectorReales(int tam, float vector[]);
+
+	void mostrarVectorRealesIntervalo(int tam, float vector[],
+			                         float minimo, float maximo) ;
 	/**
 	 * Procedimiento que muestra un vector por pantalla. Hay que pasarle
 	 * el argumento tam para indicar cuantos elementos del vector deben
