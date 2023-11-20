@@ -86,3 +86,65 @@ void mostrarMenoresQue(int tam, int vector[], int num) {
 		}
 	}
 }
+
+void rotarIzq(int tam, int vector[]){
+	int aux;
+	int i;
+
+	aux=vector[0];
+	for(i=0; i<tam-1;i++) {
+		vector[i]=vector[i+1];
+	}
+	vector[tam-1]=aux;
+
+}
+
+//void rotarIzq(int tam, int vector[]){
+//	int aux;
+//	int i;
+//
+//	aux=vector[0];
+//	for(i=1; i<tam;i++) {
+//		vector[i-1]=vector[i];
+//	}
+//	vector[tam-1]=aux;
+//
+//}
+
+void rotarDcha(int tam, int vector[]){
+	int aux;
+	int i;
+
+	aux=vector[tam-1];
+	for(i=tam-1; i>0;i--) {
+		vector[i]=vector[i-1];
+	}
+	vector[0]=aux;
+}
+
+void mostrarDesdeA(int tam, int vector[], int a) {
+	int i,j;
+
+	for(i=0;i<tam && vector[i]<=a;i++);
+
+	for (j=i;j<tam;j++) {
+		printf("%d ",vector[j]);
+	}
+
+}
+
+
+void mostrarDesdeAv2(int tam, int vector[], int a) {
+	int i, posicion=0;
+
+	for(i=0;i<tam;i++) {
+		if(vector[i]>a) {
+			posicion++;
+		}
+		if (posicion>0) {
+			printf("%d ",vector[i]);
+		}
+	}
+}
+
+

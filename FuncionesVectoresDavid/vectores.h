@@ -7,7 +7,8 @@
 
 #ifndef VECTORES_H_
 #define VECTORES_H_
-
+#include <stdio.h>
+#define MAX 50
 	/**
 	 * Procedimiento que pide un vector por teclado
 	 * Pide tantos elementos como indique el parámetro tam
@@ -38,5 +39,17 @@
 
 	void mostrarMenoresQue(int tam, int vector[], int num);
 
+	/**
+	 * Fucnión que rota todos los elementos del vector una casilla hacia la izquierda de manera cícicla
+	 * Ej: [3,4,2,5,1] se trasnforma en [4,2,5,1,3]
+	 */
+	void rotarIzq(int tam, int vector[]);
 
+	/**
+	 * Fucnión que rota todos los elementos del vector una casilla hacia la derecha de manera cícicla
+	 * Ej: [3,4,2,5,1] se trasnforma en [1,3,4,2,5]
+	 */
+	void rotarDcha(int tam, int vector[]);
+
+	void mostrarDesdeA(int tam, int vector[], int a);
 #endif /* VECTORES_H_ */
