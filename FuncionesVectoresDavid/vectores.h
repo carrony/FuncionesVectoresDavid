@@ -52,4 +52,18 @@
 	void rotarDcha(int tam, int vector[]);
 
 	void mostrarDesdeA(int tam, int vector[], int a);
+
+	int sonParalelos(int tam, float vector1[], float vector2[]);
+
+
+	float productoEscalar(int tam, float v1[], float v2[]);
+
+	int sonPerpendiculares(int tam, float v1[], float v2[]);
+
+	void ordenarSeleccion(int tam, int vector[]);
+
+	void ordenarBurbuja(int tam, int vector[]);
+
+
+
 #endif /* VECTORES_H_ */

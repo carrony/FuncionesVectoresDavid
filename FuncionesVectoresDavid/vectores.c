@@ -148,3 +148,84 @@ void mostrarDesdeAv2(int tam, int vector[], int a) {
 }
 
 
+int sonParalelos(int tam, float vector1[], float vector2[]) {
+	float factor, valor1,valor2;
+	int i;
+
+
+	for(i=0; i<tam && vector2[i]==0; i++) {
+	}
+	if (i<tam) {
+		valor1=vector1[i];
+		valor2=vector2[i];
+		factor = valor1/valor2;
+	}
+
+	for (i=0; i< tam;i++) {
+		if (!((vector1[i]==0 && vector2[i]==0) || vector1[i]/vector2[i] == factor ))
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+
+float productoEscalar(int tam, float v1[], float v2[]){
+	int i;
+	float producto=0;
+	for (i=0; i<tam;i++) {
+		producto=producto+v1[i]*v2[i];
+	}
+	return producto;
+}
+
+int sonPerpendiculares(int tam, float v1[], float v2[]) {
+//	if (productoEscalar(tam,v1,v2)==0) {
+//		return 1;
+//	}
+//	return 0;
+
+	return !productoEscalar(tam,v1,v2);
+}
+
+void ordenarSeleccion(int tam, int vector[]){
+	int i,j;
+	int menor;
+	int posMenor;
+
+	for (i=0;i<tam; i++) {
+		menor=vector[i];
+		posMenor=i;
+		for(j=i+1;j<tam;j++) {
+			if (vector[j]<menor) {
+				menor=vector[j];
+				posMenor=j;
+			}
+		}
+		if(i!=posMenor) {
+			vector[posMenor]=vector[i];
+			vector[i]=menor;
+		}
+	}
+}
+
+void ordenarBurbuja(int tam, int vector[]) {
+	int i,j;
+	int aux;
+	int hayCambio=1;
+
+	for (i=0;i<tam-1;i++) {
+		hayCambio=0;
+		for (j=0;j<tam-1-i;j++) {
+			if (vector[j]>vector[j+1]) {
+				aux=vector[j];
+				vector[j]=vector[j+1];
+				vector[j+1]=aux;
+				hayCambio=1;
+			}
+		}
+		if (!hayCambio) return;
+	}
+}
+
+
