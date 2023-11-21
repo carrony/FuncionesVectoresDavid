@@ -304,3 +304,13 @@ void concatenar(int tam1, int tam2, int v1[], int v2[], int v3[]) {
 //	}
 
 }
+
+void sumaVectores(int tam, int v1[], int v2[], int vsuma[]) {
+	int i;
+
+	for(i=0;i<tam;i++) {
+		vsuma[i]=v1[i]+v2[i];
+	}
+}
+
+

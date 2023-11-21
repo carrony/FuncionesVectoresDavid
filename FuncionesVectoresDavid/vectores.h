@@ -75,5 +75,7 @@
 
 	void concatenar(int tam1, int tam2, int v1[], int v2[], int v3[]);
 
+	void sumaVectores(int tam, int v1[], int v2[], int vsuma[]);
+
 
 #endif /* VECTORES_H_ */
