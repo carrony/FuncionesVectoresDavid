@@ -287,3 +287,20 @@ void invertir2(int tam, int vector[]){
 		j--;
 	}
 }
+
+
+void concatenar(int tam1, int tam2, int v1[], int v2[], int v3[]) {
+	int i;
+	for(i=0;i<tam1;i++) {
+		v3[i]=v1[i];
+	}
+
+	for (i=0;i<tam2;i++) {
+		v3[tam1+i]=v2[i];
+	}
+
+//	for (i=tam1;i<tam1+tam2;i++) {
+//		v3[i]=v2[i-tam1];
+//	}
+
+}

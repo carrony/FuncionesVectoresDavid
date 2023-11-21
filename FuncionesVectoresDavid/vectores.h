@@ -73,5 +73,7 @@
 
 	void invertir2(int tam, int vector[]);
 
+	void concatenar(int tam1, int tam2, int v1[], int v2[], int v3[]);
+
 
 #endif /* VECTORES_H_ */
