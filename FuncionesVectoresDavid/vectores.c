@@ -228,4 +228,42 @@ void ordenarBurbuja(int tam, int vector[]) {
 	}
 }
 
+int esCapicua(int tam, int vector[]){
+	int i,j=tam-1;
+	for (i=0; i<tam/2; i++) {
+		if (vector[i] != vector[j]) {
+			return 0;
+		}
+		j--;
+	}
+	return 1;
+}
+
+int esCapicuaSinj(int tam, int vector[]){
+	int i;
+	for (i=0; i<tam/2; i++) {
+		if (vector[i] != vector[tam-1-i]) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int esPalindromo(char cadena[]) {
+	int i,j;
+
+	i=0;
+	j=strlen(cadena)-1;
+	while(i<j) {
+		while(i<strlen(cadena) && cadena[i]==' ') { i++;}
+		while(j>0 && cadena[j]==' ') { j--;}
+		if (cadena[i] != cadena[j]) {
+			return 0;
+		}
+		i++;
+		j--;
+	}
+	return 1;
+}
+
 

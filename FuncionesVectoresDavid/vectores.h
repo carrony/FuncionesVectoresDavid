@@ -65,5 +65,10 @@
 	void ordenarBurbuja(int tam, int vector[]);
 
 
+	int esCapicua(int tam, int vector[]);
+
+	int esPalindromo(char cadena[]);
+
+
 
 #endif /* VECTORES_H_ */
