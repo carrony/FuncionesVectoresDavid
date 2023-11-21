@@ -69,6 +69,9 @@
 
 	int esPalindromo(char cadena[]);
 
+	void invertir(int tam, int vector[], int inversa[]);
+
+	void invertir2(int tam, int vector[]);
 
 
 #endif /* VECTORES_H_ */

@@ -3,6 +3,7 @@
 	<name>Ejercicio02David</name>
 	<comment></comment>
 	<projects>
+		<project>FuncionesVectoresDavid</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

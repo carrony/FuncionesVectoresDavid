@@ -266,4 +266,24 @@ int esPalindromo(char cadena[]) {
 	return 1;
 }
 
+void invertir(int tam, int vector[], int inversa[]) {
+	int i;
+	int j=tam-1;
 
+	for (i=0; i< tam; i++) {
+		inversa[i] = vector[j--];
+	}
+}
+
+void invertir2(int tam, int vector[]){
+	int aux;
+	int i=0;
+	int j=tam-1;
+
+	for (i=0;i<j;i++) {
+		aux=vector[i];
+		vector[i]=vector[j];
+		vector[j]=aux;
+		j--;
+	}
+}
